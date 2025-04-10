@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+ <nav>
+    <div class="logo"><img src="assets/NameLogo.png"/></div>
+    <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+    <ul class="nav-links">
+        <li><a href="#home" onclick="closeMenu()">Home</a></li>
+        <li><a href="#projects" onclick="closeMenu()">Projects</a></li>
+        <li><a href="#achievements" onclick="closeMenu()">Achievements</a></li>
+        <li><a href="#certifications" onclick="closeMenu()">Certifications</a></li>
+        <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+    </ul>
+</nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1 class="animated-text">Hi, I'm Ayush Kumar</h1>
+      <p class="animated-text">A Passionate Software Developer</p>
+      <div class="hero-buttons">
+        <a href="mailto:kmrayush7502@gmail.com" class="btn animated-text">Hire Me</a>
+        <a href="assets/AyushKumar_Resume.pdf" target="_blank" class="btn transparent-btn animated-text">Get CV</a>
+
+      </div>
+    </div>
+    <div class="stars-container">
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+    </div>
+  </section>
+
+
+  <!-- About Me Section -->
+
+<section id="about" class="about">
+  <div class="container">
+    <div class="about-content">
+      <div class="about-image">
+        <img src="assets/Aboutme.png" alt="About Me">
+      </div>
+      <div class="about-text">
+        <h2>About Me</h2>
+        <p>
+          I am Ayush Kumar, a dedicated and detail-oriented individual currently pursuing a B.Tech in Computer Science at Lakshmi Narain College of Technology. My passion lies in building impactful software solutions that combine functionality with real-world usability. Over the years, I’ve designed and developed a range of projects—from collaborative coding platforms to intelligent web extensions—each one reflecting my commitment to learning and innovation.
+        </p>
+        <p>
+          My core strengths lie in full-stack software development, cloud technologies, and a solid command over data structures and algorithms, which I regularly apply in problem-solving and competitive programming. I enjoy turning complex challenges into structured, scalable solutions and continuously seek opportunities to push my technical boundaries.
+        </p>
+        <p>
+          I’m driven by a continuous desire to grow as a developer—always exploring new tools, frameworks, and technologies. Whether working independently or in a team, I strive to bring clarity, efficiency, and creativity to every project I take on. With a strong foundation and a forward-looking mindset, I aim to make meaningful contributions to the tech industry and leave a lasting impact through my work.
+        </p>
+        <a href="https://www.linkedin.com/in/ayushkrdev/" class="linkedin-button" target="_blank">Follow on LinkedIn</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Tech Stack Section -->
+<section id="tech-stack" class="tech-stack-section">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">TECH STACK</h2>
+      <p class="section-subtitle">Technologies I work with</p>
+    </div>
+    
+    <div class="tech-stack-grid">
+      <!-- Programming Languages -->
+      <div class="tech-category">
+        <h3 class="tech-category-title">
+          <i class="fas fa-code"></i> Programming Languages
+        </h3>
+        <div class="tech-items">
+          <div class="tech-item">
+            <div class="tech-icon">
+              <i class="fab fa-js"></i>
+            </div>
+            <span>JavaScript</span>
+          </div>
+          <div class="tech-item">
+            <div class="tech-icon">
+              <i class="fab fa-python"></i>
+            </div>
+            <span>Python</span>
+          </div>
+          <div class="tech-item">
+            <div class="tech-icon">
+              <img src="techpng/c++.png">
+            </div>
+            <span>C++</span>
+          </div>
+          <div class="tech-item">
+            <div class="tech-icon">
+              <i class="fab fa-java"></i>
+            </div>
+            <span>Java</span>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Frontend Development -->
+      <div class="tech-category">
+        <h3 class="tech-category-title">
+          <i class="fas fa-laptop-code"></i> Frontend
+        </h3>
+        <div class="tech-items">
+          <div class="tech-item">
+            <div class="tech-icon">
+              <i class="fab fa-html5"></i>
+            </div>
+            <span>HTML5</span>
+          </div>
+          <div class="tech-item">
+            <div class="tech-icon">
+              <i class="fab fa-css3-alt"></i>
+            </div>
+            <span>CSS3</span>
+          </div>
+          <div class="tech-item">
+            <div class="tech-icon">
+              <i class="fab fa-react"></i>
+            </div>
+            <span>React</span>
+          </div>
+          <div class="tech-item">
+            <div class="tech-icon">
+              <i class="fab fa-bootstrap"></i>
+            </div>
+            <span>Bootstrap</span>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Backend Development -->
+      <div class="tech-category">
+        <h3 class="tech-category-title">
+          <i class="fas fa-server"></i> Backend
+        </h3>
+        <div class="tech-items">
+          <div class="tech-item">
+            <div class="tech-icon">
+              <i class="fab fa-node-js"></i>
+            </div>
+            <span>Node.js</span>
+          </div>
+          <div class="tech-item">
+            <div class="tech-icon">
+              <img src="techpng/express.png">
+            </div>
+            <span>Express</span>
+          </div>
+          <div class="tech-item">
+            <div class="tech-icon">
+              <img src="techpng/flask.png">
+            </div>
+            <span>Flask</span>
+          </div>
+          <div class="tech-item">
+            <div class="tech-icon">
+              <img src="techpng/rest.png">
+            </div>
+            <span>REST APIs</span>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Databases -->
+      <div class="tech-category">
+        <h3 class="tech-category-title">
+          <i class="fas fa-database"></i> Databases
+        </h3>
+        <div class="tech-items">
+          <div class="tech-item">
+            <div class="tech-icon">
+              <img src="techpng/mongo.png">
+            </div>
+            <span>MongoDB</span>
+          </div>
+          <div class="tech-item">
+            <div class="tech-icon">
+              <img src="techpng/mysql.png">
+            </div>
+            <span>MySQL</span>
+          </div>
+          <div class="tech-item">
+            <div class="tech-icon">
+              <i class="fas fa-bolt"></i>
+            </div>
+            <span>Firebase</span>
+          </div>
+        </div>
+      </div>
+      
+      <!-- DevOps & Cloud -->
+      <div class="tech-category">
+        <h3 class="tech-category-title">
+          <i class="fas fa-cloud"></i> DevOps & Cloud
+        </h3>
+        <div class="tech-items">
+          <div class="tech-item">
+            <div class="tech-icon">
+              <i class="fab fa-aws"></i>
+            </div>
+            <span>AWS</span>
+          </div>
+          <div class="tech-item">
+            <div class="tech-icon">
+              <img src="techpng/ibm.png">
+            </div>
+            <span>IBM Cloud</span>
+          </div>
+          <div class="tech-item">
+            <div class="tech-icon">
+              <i class="fab fa-docker"></i>
+            </div>
+            <span>Docker</span>
+          </div>
+          <div class="tech-item">
+            <div class="tech-icon">
+              <i class="fab fa-linux"></i>
+            </div>
+            <span>Linux</span>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Tools -->
+      <div class="tech-category">
+        <h3 class="tech-category-title">
+          <i class="fas fa-tools"></i> Tools
+        </h3>
+        <div class="tech-items">
+          <div class="tech-item">
+            <div class="tech-icon">
+              <i class="fab fa-git-alt"></i>
+            </div>
+            <span>Git</span>
+          </div>
+          <div class="tech-item">
+            <div class="tech-icon">
+              <i class="fab fa-github"></i>
+            </div>
+            <span>GitHub</span>
+          </div>
+          <div class="tech-item">
+            <div class="tech-icon">
+              <img src="techpng/postman.png">
+            </div>
+            <span>Postman
+            </span>
+          </div>
+          <div class="tech-item">
+            <div class="tech-icon">
+              <img src="techpng/vscode.png">
+            </div>
+            <span>VS Code</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <div class="container">
+        <div class="section-header">
+            <img src="assets/Projects.png" alt="Projects Overview" class="projects-image">
+            <h2>MY PROJECTS</h2>
+            <p class="section-subtitle">A collection of my recent work and experiments</p>
+        </div>
+
+        <div class="project-grid">
+            <!-- Maskify -->
+            <div class="project-card">
+                <div class="project-image-container">
+                    <img src="Projects/maskify.png" alt="Maskify" class="project-image">
+                    <div class="project-tag">Full Stack</div>
+                </div>
+                <div class="project-content">
+                    <h3>Maskify</h3>
+                    <p>An anonymous community-driven platform with real-time chat and authentication.</p>
+                    <div class="tech-stack">
+                        <span>React</span>
+                        <span>Node.js</span>
+                        <span>MongoDB</span>
+                        <span>OAuth</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://maskify-frontend.onrender.com/welcome" target="_blank" rel="noopener noreferrer" class="project-link demo"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        <a href="https://github.com/Ayush-Kmr07/Maskify" target="_blank" rel="noopener noreferrer" class="project-link code"><i class="fab fa-github"></i> Source Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TreeSense Imaging -->
+            <div class="project-card">
+                <div class="project-image-container">
+                    <img src="Projects/treesense.png" alt="TreeSense" class="project-image">
+                    <div class="project-tag">AI/ML</div>
+                </div>
+                <div class="project-content">
+                    <h3>TreeSense Imaging</h3>
+                    <p>An AI-powered tool for tree enumeration and analysis using satellite imagery.</p>
+                    <div class="tech-stack">
+                        <span>Python</span>
+                        <span>TensorFlow</span>
+                        <span>OpenCV</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://treesense.vipulchaturvedi.com/predict" target="_blank" rel="noopener noreferrer" class="project-link demo"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        <a href="https://github.com/Ayush-Kmr07/TreeSense" target="_blank" rel="noopener noreferrer" class="project-link code"><i class="fab fa-github"></i> Source Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Code Sync -->
+            <div class="project-card">
+                <div class="project-image-container">
+                    <img src="Projects/codesync.png" alt="Code Sync" class="project-image">
+                    <div class="project-tag">Real-time</div>
+                </div>
+                <div class="project-content">
+                    <h3>Code Sync</h3>
+                    <p>A real-time collaborative coding platform using Socket.io and CodeMirror.</p>
+                    <div class="tech-stack">
+                        <span>React</span>
+                        <span>Socket.io</span>
+                        <span>Express</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://codesync-87qi.onrender.com/" target="_blank" rel="noopener noreferrer" class="project-link demo"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        <a href="https://github.com/Ayush-Kmr07/CodeSync" target="_blank" rel="noopener noreferrer" class="project-link code"><i class="fab fa-github"></i> Source Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- YouTube Video Summarizer -->
+            <div class="project-card">
+                <div class="project-image-container">
+                    <img src="Projects/summarizer.png" alt="YouTube Video Summarizer" class="project-image">
+                    <div class="project-tag">Extension</div>
+                </div>
+                <div class="project-content">
+                    <h3>YouTube Video Summarizer</h3>
+                    <p>Chrome extension to generate and export summarized transcripts of YouTube videos.</p>
+                    <div class="tech-stack">
+                        <span>Flask</span>
+                        <span>NLP</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                      <a class="project-link demo disabled" tabindex="-1" aria-disabled="true">
+                        <i class="fas fa-external-link-alt"></i> Live Demo
+                    </a>
+                        <a href="https://github.com/Ayush-Kmr07/Youtube-Video-Summarizer" target="_blank" rel="noopener noreferrer" class="project-link code"><i class="fab fa-github"></i> Source Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Daily Blog -->
+            <div class="project-card">
+                <div class="project-image-container">
+                    <img src="Projects/dailyblog.png" alt="Daily Blog" class="project-image">
+                    <div class="project-tag">CMS</div>
+                </div>
+                <div class="project-content">
+                    <h3>Daily Blog</h3>
+                    <p>A simple and elegant blog application for daily journal entries.</p>
+                    <div class="tech-stack">
+                        <span>EJS</span>
+                        <span>MongoDB</span>
+                        <span>Markdown</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link demo"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        <a href="https://github.com/Ayush-Kmr07/DailyBlog" target="_blank" rel="noopener noreferrer" class="project-link code"><i class="fab fa-github"></i> Source Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- To-Do List -->
+            <div class="project-card">
+                <div class="project-image-container">
+                    <img src="Projects/todolist.png" alt="To-Do List" class="project-image">
+                    <div class="project-tag">Productivity</div>
+                </div>
+                <div class="project-content">
+                    <h3>To-Do List</h3>
+                    <p>A productivity-enhancing to-do list app with local storage.</p>
+                    <div class="tech-stack">
+                        <span>JavaScript</span>
+                        <span>Express</span>
+                        <span>MongoDB</span>
+                    </div>
+                    <div class="project-links">
+                      
+                      <a href="https://todo-list-lwgv.onrender.com/"  target="_blank" rel="noopener noreferrer" class="project-link demo"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        <a href="https://github.com/Ayush-Kmr07/ToDo_List" target="_blank" rel="noopener noreferrer" class="project-link code"><i class="fab fa-github"></i> Source Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Weather App -->
+            <div class="project-card">
+                <div class="project-image-container">
+                    <img src="Projects/weather1.png" alt="Weather App" class="project-image">
+                    <div class="project-tag">API</div>
+                </div>
+                <div class="project-content">
+                    <h3>Weather App</h3>
+                    <p>A real-time weather forecasting app using OpenWeather API.</p>
+                    <div class="tech-stack">
+                        <span>JavaScript</span>
+                        <span>API</span>
+                        <span>Geolocation</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://weather-app-mf4v.onrender.com/"  target="_blank" rel="noopener noreferrer" class="project-link demo"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        <a href="https://github.com/Ayush-Kmr07/Weather-App"  target="_blank" rel="noopener noreferrer" class="project-link code"><i class="fab fa-github"></i> Source Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Drummer's Playground -->
+            <div class="project-card">
+                <div class="project-image-container">
+                    <img src="Projects/drumkit.png" alt="Drummer's Playground" class="project-image">
+                    <div class="project-tag">Interactive</div>
+                </div>
+                <div class="project-content">
+                    <h3>Drummer's Playground</h3>
+                    <p>A fun virtual drum set with interactive sounds.</p>
+                    <div class="tech-stack">
+                        <span>JavaScript</span>
+                        <span>CSS Animations</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://ayush-kmr07.github.io/Drummer-Playground/" class="project-link demo"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        <a href="https://github.com/Ayush-Kmr07/Drummer-Playground/" class="project-link code"><i class="fab fa-github"></i> Source Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Portfolio Website -->
+            <div class="project-card">
+                <div class="project-image-container">
+                    <img src="Projects/portfolio.png" alt="Portfolio Website" class="project-image">
+                    <div class="project-tag">Design</div>
+                </div>
+                <div class="project-content">
+                    <h3>Portfolio Website</h3>
+                    <p>A modern and fully responsive portfolio website with animations and interactive UI.</p>
+                    <div class="tech-stack">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link demo"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        <a href="#" class="project-link code"><i class="fab fa-github"></i> Source Code</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+  <!-- Achievements Section -->
+
+  <section id="achievements" class="achievements">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">ACHIEVEMENTS</h2>
+        <p class="section-subtitle">Milestones that showcase my skills and dedication</p>
+      </div>
+      
+      <div class="achievements-wrapper">
+        <div class="achievements-image">
+          <img src="assets/Achievements.png" alt="Achievements" class="achievement-main-image">
+          <div class="image-overlay"></div>
+        </div>
+        
+        <div class="achievements-content">
+          <div class="achievement-item">
+            <div class="achievement-icon">🏆</div>
+            <div class="achievement-text">
+              <h3>Smart India Hackathon 2023</h3>
+              <p>5th rank nationwide for our AI-powered tree counting solution</p>
+            </div>
+          </div>
+  
+          <div class="achievement-item">
+            <div class="achievement-icon">💻</div>
+            <div class="achievement-text">
+              <h3>Technical Interviews</h3>
+              <p>Successfully cracked offers from leading IT companies such as TCS, Capgemini, Cognizant, and more.</p>
+
+            </div>
+          </div>
+
+          <div class="achievement-item">
+            <div class="achievement-icon">🎖</div>
+            <div class="achievement-text">
+              <h3>Professional Certifications</h3>
+              <p>AWS, Cisco, IBM , and PCAP certified</p>
+            </div>
+          </div>
+
+          <div class="achievement-item">
+            <div class="achievement-icon">👨‍💻</div>
+            <div class="achievement-text">
+              <h3>Competitive Coding</h3>
+              <p>Solved 400+ DSA problems across platforms like LeetCode, GeeksforGeeks, CodeStudio and more.</p>
+
+            </div>
+          </div>
+
+          <div class="achievement-item">
+            <div class="achievement-icon">🚀</div>
+            <div class="achievement-text">
+              <h3>Xplorazzi Internship</h3>
+              <p>Built an annotation review tool that improved accuracy by 40% and efficiency by 50% using React, Flask, and OpenCV.</p>
+
+            </div>
+          </div>
+  
+          <div class="achievement-item">
+            <div class="achievement-icon">🎯</div>
+            <div class="achievement-text">
+              <h3>Mentorship</h3>
+              <p>Guided juniors in placement preparation strategies and technical skills</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+      
+      
+ <!-- Certifications Section -->
+<section id="certifications" class="certifications">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">CERTIFICATIONS</h2>
+      <p class="section-subtitle">Validations of my technical expertise and continuous learning</p>
+    </div>
+    <div class="certifications-wrapper">
+      <button class="scroll-btn left-btn">&#10094;</button> 
+      <div class="certifications-grid">
+        <div class="certification-card">
+          <img src="certifications/aws2.png" alt="AWS Certified">
+          <div class="certification-content">
+            <h3>Cloud Practicioner Essentials</h3>
+            <p>Amazon Web Services</p>
+            <span class="certification-date">Issued: July 2024</span>
+            <a href="https://drive.google.com/file/d/1xTiei2M9Y_IuOUZlVVOmK6SIkyWrVWwr/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="certification-link">View Credential</a>
+          </div>
+        </div>
+        <div class="certification-card">
+          <img src="certifications/pcap.jpeg" alt="PCAP Certified">
+          <div class="certification-content">
+            <h3>PCAP: Python</h3>
+            <p>Python Institute</p>
+            <span class="certification-date">Issued: January  2023</span>
+            <a href="https://drive.google.com/file/d/1IJrVrlTjwtpMCtT6kGIK7BVt1nx7eT7a/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="certification-link">View Credential</a>
+          </div>
+        </div>
+        <div class="certification-card">
+          <img src="certifications/cisco_ccna.png" alt="Cisco Certified">
+          <div class="certification-content">
+            <h3>CCNA: Cisco Certified Network Associate</h3>
+            <p>Cisco</p>
+            <span class="certification-date">Issued: June 2024</span>
+            <a href="https://drive.google.com/drive/folders/1VWDWfX9HbOoaXNoMNCUdV_hYsX-bqtCY?usp=sharing" target="_blank" rel="noopener noreferrer" class="certification-link">View Credential</a>
+          </div>
+        </div>
+        <div class="certification-card">
+          <img src="certifications/aws2.png" alt="AWS Certified">
+          <div class="certification-content">
+            <h3>AWS Cloud Foundation</h3>
+            <p>AWS</p>
+            <span class="certification-date">Issued: June 2024</span>
+            <a href="https://www.credly.com/badges/19d76160-e469-4f7c-80c9-51dba20c3ee8" target="_blank" rel="noopener noreferrer" class="certification-link">View Credential</a>
+          </div>
+        </div>
+        <div class="certification-card">
+          <img src="certifications/cisco.png" alt="Google Cloud Certified">
+          <div class="certification-content">
+            <h3>CyberOps Associate</h3>
+            <p>Cisco</p>
+            <span class="certification-date">Issued: June 2024</span>
+            <a href="https://www.credly.com/badges/9b646fcc-bdbf-4f33-910b-a913907839e4" target="_blank" rel="noopener noreferrer" class="certification-link">View Credential</a>
+          </div>
+        </div>
+        <div class="certification-card">
+          <img src="certifications/IBM.png" alt="Google Cloud Certified">
+          <div class="certification-content">
+            <h3>Introduction to Web Development with HTML, CSS,
+              JavaScript</h3>
+            <p>IBM | Coursera</p>
+            <span class="certification-date">Issued: Dec 2022</span>
+            <a href="https://drive.google.com/file/d/1_c6gc4dUCbhH1UBfjAnefuJ94zwJnmHW/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="certification-link">View Credential</a>
+          </div>
+        </div>
+        <div class="certification-card">
+          <img src="certifications/credly.png" alt="Other Certification">
+          <div class="certification-content">
+            <h3>Others Certifications</h3>
+            <p>Credly</p>
+            <a href="https://www.credly.com/users/ayush-kumar.f6c0af55" target="_blank" rel="noopener noreferrer" class="certification-link">View More</a>
+          </div>
+        </div>
+      </div>
+      <button class="scroll-btn right-btn">&#10095;</button> 
+    </div>
+  </div>
+</section>
+
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">GET IN TOUCH</h2>
+        <p class="section-subtitle">Let's collaborate on something amazing</p>
+      </div>
+      
+      <div class="contact-content">
+        <div class="contact-info">
+          <div class="contact-card">
+            <h3 class="social-title">ABOUT</h3>
+            <p class="contact-message">
+              Thank you for visiting my portfolio website. I hope you enjoyed exploring my work and learning more about my expertise in full-stack development, UI/UX, Cloud and DSA.
+            </p>
+            <p class="contact-message">
+              If you have any questions or would like to discuss potential collaborations, please feel free to reach out to me. I'm always excited to connect with fellow professionals and explore new opportunities.
+            </p>
+            <div class="contact-methods" style="display: flex; align-items: center; gap: 16px;">
+              <i class="fas fa-envelope" style="font-size: 48px; color: #ff6f61;"></i>
+              <div style="display: flex; flex-direction: column;">
+                <a href="mailto:kmrayush7502@gmail.com"
+                   style="font-weight: bold; font-size: 20px; color: inherit; text-decoration: none;"
+                   onmouseover="this.style.textDecoration='underline'"
+                   onmouseout="this.style.textDecoration='none'">
+                  EMAIL NOW
+                </a>
+                <span style="font-size: 14px; color: #a1a8bd;">kmrayush7502@gmail.com</span>
+              </div>
+            </div>
+            
+            
+            
+          </div>
+        </div>
+  
+        <!-- Profile & Portfolios -->
+        <div class="social-links">
+          <div class="social-card">
+            <h3 class="social-title">PROFILES & PORTFOLIOS</h3>
+            <ul class="social-list">
+              <li class="social-item">
+                <a href="https://github.com/Ayush-Kmr07" target="_blank" class="social-link">
+                  <div class="social-icon github">
+                    <i class="fab fa-github"></i>
+                  </div>
+                  <span class="social-text">GitHub</span>
+                  <i class="fas fa-arrow-right link-arrow"></i>
+                </a>
+              </li>
+              <li class="social-item">
+                <a href="https://www.linkedin.com/in/ayushkrdev/" target="_blank" class="social-link">
+                  <div class="social-icon linkedin">
+                    <i class="fab fa-linkedin-in"></i>
+                  </div>
+                  <span class="social-text">LinkedIn</span>
+                  <i class="fas fa-arrow-right link-arrow"></i>
+                </a>
+              </li>
+              <li class="social-item">
+                <a href="https://leetcode.com/u/kmrayush7502/" target="_blank" class="social-link">
+                  <div class="social-icon leetcode">
+                    <i class="fas fa-code"></i>
+                  </div>
+                  <span class="social-text">LeetCode</span>
+                  <i class="fas fa-arrow-right link-arrow"></i>
+                </a>
+              </li>
+              <li class="social-item">
+                <a href="https://www.credly.com/users/ayush-kumar.f6c0af55" target="_blank" class="social-link">
+                  <div class="social-icon credly">
+                    <i class="fas fa-award"></i>
+                  </div>
+                  <span class="social-text">Credly</span>
+                  <i class="fas fa-arrow-right link-arrow"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>Copyright © 2025 All Rights Reserved by Ayush Kumar.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
