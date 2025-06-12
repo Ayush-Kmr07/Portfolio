@@ -385,6 +385,48 @@ nav .logo img {
   background-color: #005a8e;
 }
 
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  .about-image {
+    flex: 0 0 100%;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+
+  .about-image img {
+    width: 80%;
+    max-width: 250px;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .about-text {
+    flex: 0 0 100%;
+    text-align: center;
+  }
+
+  .about h2 {
+    font-size: 2rem;
+  }
+
+  .about p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  .linkedin-button {
+    font-size: 0.95rem;
+    padding: 10px 18px;
+    margin-top: 10px;
+  }
+}
+
+
 /* Projects */
 .projects {
   padding: 100px 0;
@@ -1296,30 +1338,46 @@ text-decoration: underline;
   }
 }
 
-@media (max-width: 576px) {
-  .section-title {
-    font-size: 2rem;
+@media (max-width: 768px) {
+  .contact-content {
+    flex-direction: column;
+    gap: 30px;
+    padding: 0 20px;
   }
-  
-  .section-subtitle {
-    font-size: 1rem;
-  }
-  
-  .contact {
-    padding: 60px 0;
-  }
-  
+
   .contact-card,
   .social-card {
+    width: 100%;
     padding: 20px;
   }
+
+  .contact-methods {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .social-link {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .social-text {
+    font-size: 0.95rem;
+  }
+
+  footer {
+    padding: 15px 20px;
+    background: #050D1E;
+  }
 }
+
   
   /* Footer */
   footer {
     text-align: center;
     padding: 20px 0;
     background: #050D1E;
+    
   }
   
   /* Animations */
@@ -1354,39 +1412,104 @@ section {
   align-items: center;
 }
 
-@media (max-width: 576px) {
-  .section-title {
-    font-size: 2rem;
+@media (max-width: 768px) {
+  .achievements-wrapper {
+    flex-direction: column;
+    gap: 30px;
   }
-  
+
+  .achievements-image {
+    flex: 0 0 auto;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .achievement-main-image {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+  }
+
+  .achievements-content {
+    flex: 0 0 auto;
+    width: 100%;
+    padding: 0 15px;
+  }
+
   .achievement-item {
     flex-direction: column;
     text-align: center;
+    align-items: center;
     padding: 15px;
   }
-  
+
   .achievement-icon {
     margin-bottom: 10px;
   }
-}
 
-@media (max-width: 1024px) {
-  .certifications-grid {
-    width: 640px;
+  .achievement-text h3 {
+    font-size: 1.05rem;
+  }
+
+  .achievement-text p {
+    font-size: 0.9rem;
+  }
+
+  .section-subtitle {
+    font-size: 0.95rem;
+    padding: 0 10px;
   }
 }
+
 
 @media (max-width: 768px) {
   .scroll-btn {
-    display: none; 
+    display: none;
   }
 
   .certifications-grid {
-    width: 100%; 
+    width: 100%;
+    overflow-x: auto;
+    gap: 12px;
+    padding: 10px 0;
+    scroll-snap-type: x mandatory;
   }
 
   .certification-card {
-    width: 100%; 
+    flex: 0 0 65vw; /* smaller card size */
+    max-width: 65vw;
+    box-sizing: border-box;
+    padding: 12px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    scroll-snap-align: center;
+  }
+
+  .certification-card img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+  }
+
+  .certification-content h3 {
+    font-size: 0.95rem;
+    margin-bottom: 4px;
+  }
+
+  .certification-content p {
+    font-size: 0.8rem;
+    margin-bottom: 4px;
+  }
+
+  .certification-date {
+    font-size: 0.75rem;
+    margin-bottom: 6px;
+  }
+
+  .certification-link {
+    font-size: 0.8rem;
   }
 }
 
